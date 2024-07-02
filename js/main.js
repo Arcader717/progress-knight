@@ -250,9 +250,9 @@ const tooltips = {
 
     //The Order of Discovery
     "Junior Caretaker": "A low-level administrator of the ancient Order of Discovery has offered you a job. Cleaning shit-stained chamber pots and mopping kitchen floors isn't glamorous work, but it gives you the rare chance to peruse the Order's world-class library of exotic books. Who cares if touching the books is an offense worthy of expulsion?",
-    "Lead Caretaker": "Witty placeholder, my name is.",
+    "Lead Caretaker": "Nothing much has improved, but you have received some amount of recognition for cleaning. Apparently that's all you are good for", // Yay, new tooltip
     "Freshman": "Your leadership of the caretaking team has proven you have a modicum of brain cells. A teacher you frequently see has vouched for your potential. Your studies are long and often boring, but you can sense there are great secrets within these halls waiting to be discovered.",
-    "Sophomore": "Rhyming is crime-ing, and feature delay is not the way.",
+    "Sophomore": "While you may be a student, the teachers and other students are as boring as ever. Try not to die of boredom.",
     "Junior": "Try as I do, these temporary tooltips are poo.",
     "Senior": "Forget me not, for this author shall not.",
     "Probation": "Having completed your basic studies, the Order grants you a bottom-of-the-barrel position as research associate to an old member of little renown. Any major misstep will probably result in your banishment from the halls of knowledge.",
