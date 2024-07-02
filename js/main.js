@@ -33,7 +33,7 @@ const baseLifespan = 365 * 70
 
 //Turn on devmode:  1
 //Turn off devmode: 0
-var devModeFastProgress = 0;
+var devModeFastProgress = 1;
 // ******* DEV MODE SPEED INCREASES ******* //
 //original base game speed: 4
 var baseGameSpeed = 4;
