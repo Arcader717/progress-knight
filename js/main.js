@@ -130,8 +130,6 @@ const skillBaseData = {
     "Demon training": {name: "Demon training", maxXp: 100, effect: 0.01, description: "All xp"},
     "Blood meditation": {name: "Blood meditation", maxXp: 100, effect: 0.01, description: "Evil gain"},
     "Demon's wealth": {name: "Demon's wealth", maxXp: 100, effect: 0.002, description: "Job pay"},
-
-    
 }
 
 const projectBaseData = {
@@ -359,6 +357,11 @@ function getBindedTaskEffect(taskName) {
     return task.getEffect.bind(task)
 }
 
+function getBindedBuildingEffect(buildingName) {
+    var building = o_townBuildingsContainer[buildingName]
+    return building.getExperienceMultiplier.bind(building)
+}
+
 function getBindedItemEffect(itemName) {
     var item = gameData.itemData[itemName]
     return item.getEffect.bind(item)
@@ -450,7 +453,7 @@ function addMultipliers() {
         }
         if(jobCategories["Nobility"].includes(task.name)) {
 	        // Nobility xp multi from farm amounts
-            task.xpMultipliers.push(o_townBuildingsContainer.o_farm.getExperienceMultiplier);
+            task.xpMultipliers.push(getBindedBuildingEffect("o_farm"));
         }
     }
 
