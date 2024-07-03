@@ -449,7 +449,8 @@ function addMultipliers() {
             task.xpMultipliers.push(getBindedTaskEffect("Unusual Insight"));
         }
         if(jobCategories["Nobility"].includes(task.name)) {
-            //todo
+	    // Nobility xp multi from farm amounts
+            //task.xpMultipliers.push();
         }
     }
 
