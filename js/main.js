@@ -24,6 +24,9 @@ var tempData = {}
 //used for Auto Learn skill switching logic
 var skillWithLowestMaxXp = null
 
+//to help with turning on and off devMode
+const searchParams = new URLSearchParams(window.location.search)
+
 const autoPromoteElement = document.getElementById("autoPromote")
 const autoLearnElement = document.getElementById("autoLearn")
 
@@ -31,9 +34,9 @@ const updateSpeed = 20
 
 const baseLifespan = 365 * 70
 
-//Turn on devmode:  1
-//Turn off devmode: 0
-var devModeFastProgress = 1;
+//Turn on devmode:  "?dev=1"
+//Turn off devmode: "?dev=0" or don't add a parameter to the url
+var devModeFastProgress = Number(searchParams.get(dev));
 // ******* DEV MODE SPEED INCREASES ******* //
 //original base game speed: 4
 var baseGameSpeed = 4;
