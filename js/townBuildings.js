@@ -10,8 +10,8 @@ o_woodenHut: {
     name: "Wooden Hut",
     id: "woodenHut",
     count: 0,
-    baseCost: 100000000001, //treat as const
-    costOfNextBuilding: 100000000001,
+    baseCost: 10001, //treat as const
+    costOfNextBuilding: 10001,
     costGrowthFactor: 1.01,
     role: ["Housing"],
 
@@ -32,8 +32,8 @@ o_farm: {
     name: "Farm",
     id: "farm",
     count: 0,
-    baseCost: 1000000000001, //treat as const
-    costOfNextBuilding: 1000000000001,
+    baseCost: 100000001, //treat as const
+    costOfNextBuilding: 100000001,
     costGrowthFactor: 1.05,
     role: ["Food", "Income", "Prestige", "Nobility xp"],
     xpMultiplier: 1.10,
@@ -64,8 +64,8 @@ o_grainShed: {
     name: "Grain Shed",
     id: "grainShed",
     count: 0,
-    baseCost: 100000000001, //treat as const
-    costOfNextBuilding: 100000000001,
+    baseCost: 10000001, //treat as const
+    costOfNextBuilding: 10000001,
     costGrowthFactor: 1.07,
     role: ["Food", "Income Boost"],
     targets: ["Farm"],
