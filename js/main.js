@@ -36,7 +36,7 @@ const baseLifespan = 365 * 70
 
 //Turn on devmode:  "?dev=1"
 //Turn off devmode: "?dev=0" or don't add a parameter to the url
-var devModeFastProgress = Number(searchParams.get(dev));
+var devModeFastProgress = searchParams.get(dev);
 // ******* DEV MODE SPEED INCREASES ******* //
 //original base game speed: 4
 var baseGameSpeed = 4;
