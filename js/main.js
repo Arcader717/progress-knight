@@ -360,9 +360,8 @@ function getBindedTaskEffect(taskName) {
     return task.getEffect.bind(task)
 }
 
-function getBindedBuildingEffect(buildingName) {
-    var building = o_townBuildingsContainer[buildingName]
-    return building.getExperienceMultiplier.bind(building)
+function getFarmXPEffect() {
+    return o_townBuildingsContainer.o_farm.getExperienceMultiplier
 }
 
 function getBindedItemEffect(itemName) {
@@ -456,7 +455,7 @@ function addMultipliers() {
         }
         if(jobCategories["Nobility"].includes(task.name)) {
 	        // Nobility xp multi from farm amounts
-            task.xpMultipliers.push(getBindedBuildingEffect("o_farm"));
+            task.xpMultipliers.push(getFarmXPEffect);
         }
     }
 
